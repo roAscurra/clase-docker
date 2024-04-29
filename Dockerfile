@@ -5,7 +5,6 @@ RUN apk add openjdk17
 
 COPY . .
 RUN chmod +x ./gradlew
-#para crea la carpeta build:
 RUN ./gradlew bootJar --no-daemon
 
 FROM openjdk:17-alpine
